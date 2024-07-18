@@ -1,0 +1,553 @@
+/** RESET **/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/**-------------------------- HEADER ------------------------**/
+header {
+    background-color: #140f07;
+}
+
+.logobox {
+    display: flex;
+    justify-content: center;
+}
+
+.logobox img {
+    width: 150px;
+}
+
+nav ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+nav ul li a:hover {
+    background-color: #1d1c1c;
+}
+
+/*--------------------------------banners--------------------------*/
+
+.Banner_index img {
+    height: auto;
+    width: 100%;
+}
+
+.Banner_servicios img {
+    height: auto;
+    width: 100%;
+}
+
+.Banner_tienda img {
+    height: auto;
+    width: 100%;
+}
+
+
+/*--------------------------------Cuerpo---------------------------*/
+main {
+    background-color: #bfcbf8;
+}
+
+.hero {
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-image: url(../img/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    background-color: #140f07a4;
+    margin-top: 33px;
+    font-size: 80px;
+    font-style: oblique;
+    font-variant: inherit;
+    border: 10px solid white;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    font-size: 35px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.hero a {
+    font-size: 25px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+main h3 {
+    background-color: #bfcbf8(255, 0, 0, 0.363);
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding: 15px;
+}
+
+.index_profesionales {
+    background-color: #bfcbf8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-color: #8389bb;
+}
+
+.index_profesionales h4 {
+    color: #8389bb;
+    text-align: center;
+    font-style: oblique;
+    font-style: initial;
+    font-size: 2vw;
+}
+
+.index_profesionales div img {
+    background-position: center;
+    /* Centrar la imagen dentro del div */
+    width: 40vw;
+    height: 40vw;
+    border: 10px solid #8389bb;
+    border-radius: 8%;
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+
+/*-----------------------------Nosotros---------------------------*/
+.nosotros_mapa {
+    background-color: #1db5ba;
+    display: wrap;
+    flex-wrap: wrap;
+}
+
+.nosotros_mapa div {
+    margin-left: 20px;
+    text-align: start;
+}
+
+.nosotros_mapa h4 {
+    padding: 50px 0px 0px 0px;
+    color: white;
+    text-align: center;
+    font-style: oblique;
+    font-style: initial;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.nosotros_mapa p {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.nosotros_mapa iframe {
+    height: 20vw;
+    width: 100vw;
+    padding: 20px;
+}
+
+.nosotros_cuerpo {
+    background-color: #122c43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nosotros_cuerpo ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nosotros_cuerpo li {
+    margin: 10px 80px;
+}
+
+.nosotros_cuerpo a {
+    text-decoration: none;
+}
+
+.nosotros_cuerpo button {
+    height: 100px;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #20d8d8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.nosotros_cuerpo button:hover {
+    background-color: #0056b3;
+}
+
+
+.publicidad {
+    padding: 20px;
+    text-align: center;
+    background-color: #1db5ba;
+}
+
+.publicidad iframe {
+    height: 20vw;
+    width: 85vw;
+}
+
+/*-----------------------------Servicios---------------------------*/
+body section h2 {
+    padding: 15px;
+    font-size: 60px;
+    background-color: chocolate;
+    border-color: white;
+    text-align: center;
+}
+
+.Servicios_desgloce {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #29768d;
+    padding: 20px;
+}
+
+.Servicios_desgloce div img {
+    background-position: center;
+    /* Centrar la imagen dentro del div */
+    width: 400px;
+    height: 400px;
+    border: 10px solid white;
+    border-radius: 8%;
+}
+
+.Servicios_desgloce button {
+    background-position: center;
+    width: 100px;
+    height: 50px;
+    border: 10px solid white;
+    border-radius: 8%;
+}
+
+.Servicios_detalle {
+    padding: 30px;
+    margin: 2px;
+}
+
+.Servicios_detalle div {
+    padding: 30px;
+    margin: 2px;
+}
+
+.Servicios_detalle h4 {
+    padding: 15px;
+    background-color: rgb(121, 1, 1);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.Servicios_detalle div ul {
+    background-color: #29768d;
+    color: white;
+    font-size: 20px;
+    text-align: center
+}
+
+/*-----------------------------Tienda---------------------------*/
+.Tienda-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tienda-productos .Proteina_titulo,
+.Tienda-productos .Creatina_titulo,
+.Tienda-productos .Otro_titulo {
+    grid-column: span 5; /* Span across three columns */
+    text-align: center;
+}
+
+.Tienda-productos .Proteina,
+.Tienda-productos .Creatina,
+.Tienda-productos .Otros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tienda-productos img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+
+/*-----------------------------Contacto---------------------------*/
+.Contacto_mapa {
+    background-color: #173648;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Contacto_formulario {
+    font-size: 20px !important;
+    background-position: space-around;
+    border: 10px solid;
+    background-color: black;
+    color: white;
+}
+
+.Contacto_mapa iframe {
+    height: 400px;
+    width: 1100px;
+}
+
+.Contacto_propaganda {
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #12657a;
+}
+
+.Contacto_propaganda iframe {
+    height: 300px;
+    width: 1100px;
+}
+
+/*-----------------------------FOOTER---------------------------*/
+footer {
+    background-color: #140f07;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+}
+
+footer div a img {
+    width: 150px;
+}
+
+Footer hr {
+    border-style: double;
+}
+
+.RedesSociales {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+footer ul li {
+    font-size: 5vw !important;
+    margin: 2vw 8vw !important;
+    color: white
+}
+
+.RedesSociales i:hover {
+    width: 32%;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 20px;
+    border: 1px;
+    padding: 10px;
+}
+
+/*-----------------------------Responsiv---------------------------!*/
+
+/*---INDEX---!*/
+/*-------------------------1050px-------------------------------!*/
+@media screen and (max-width: 1050px) {
+    .footer div a img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .footer p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .footer ul li {
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+}
+
+/*-------------------------850px-------------------------------!*/
+@media screen and (max-width: 850px) {
+    .logobox img {
+        width: 15vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header nav ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero {
+        padding: 60px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero h1 {
+        margin-top: 0px;
+        font-size: 50px;
+        border: 5px solid white;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero p {
+        font-size: 25px;
+        margin: 8px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero a {
+        font-size: 20px;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        margin: 7px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main h3 {
+        background-color: #bfcbf8(255, 0, 0, 0.363);
+        color: white;
+        font-size: 4vw;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .index_profesionales h4 {
+        font-size: 3.6vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .index_profesionales div img {
+        width: 250px;
+        height: 250px;
+        border: 8px solid #8389bb;
+        border-radius: 8%;
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer .img {
+        width: 12vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .footer section ul li img {
+        width: 22%;
+    }
+}
+
+/*-------------------------470px-------------------------------!*/
+
+@media screen and (max-width: 470px) {
+    .footer section ul li img {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .header div a img {
+        width: 10vh;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .header nav ul li {
+        font-size: 9px;
+    }
+}
+
+/*---NOSOTROS---!*/
+/*-------------------------850px-------------------------------!*/
+@media screen and (max-width: 0px) {
+    .nosotros_mapa iframe {
+        height: 500000px;
+        width: 80vw;
+        padding: 555px;
+    }
+}
+
+@media screen and (max-width: 0px) {
+    .nosotros_mapa p {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
