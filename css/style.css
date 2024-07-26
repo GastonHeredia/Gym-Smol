@@ -136,8 +136,8 @@ main h3 {
 .index_profesionales div img {
     background-position: center;
     /* Centrar la imagen dentro del div */
-    width: 40vw;
-    height: 40vw;
+    width: 20vw;
+    height: 20vw;
     border: 10px solid #8389bb;
     border-radius: 8%;
     margin: 10px;
@@ -175,7 +175,7 @@ main h3 {
 
 .nosotros_mapa iframe {
     height: 20vw;
-    width: 100vw;
+    width: 98.96vw;
     padding: 20px;
 }
 
@@ -235,61 +235,69 @@ main h3 {
 body section h2 {
     padding: 15px;
     font-size: 60px;
-    background-color: chocolate;
+    background-color: #00475c;
     border-color: white;
     text-align: center;
 }
 
 .Servicios_desgloce {
     display: flex;
-    justify-content: space-evenly;
-    background-color: #29768d;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #002331;
     padding: 20px;
+}
+.titulo_servicios h2{
+    color: white;
+    margin: 0px;
+    border: 5px solid black;
 }
 
 .Servicios_desgloce div img {
     background-position: center;
     /* Centrar la imagen dentro del div */
-    width: 400px;
-    height: 400px;
-    border: 10px solid white;
-    border-radius: 8%;
-}
-
-.Servicios_desgloce button {
-    background-position: center;
-    width: 100px;
-    height: 50px;
-    border: 10px solid white;
+    width: 300px;
+    height: 300px;
+    border: 8px solid white;
     border-radius: 8%;
 }
 
 .Servicios_detalle {
+    background-color: #00475c;
     padding: 30px;
-    margin: 2px;
+    border: 5px solid black;
 }
 
 .Servicios_detalle div {
-    padding: 30px;
-    margin: 2px;
+    margin: 15px;
 }
 
 .Servicios_detalle h4 {
     padding: 15px;
-    background-color: rgb(121, 1, 1);
-    color: white;
+    background-color: #00ffff;
+    color: black;
     font-size: 40px;
     text-align: center;
-    border: 2px solid red;
+    border: 5px solid #002331;
 }
 
-.Servicios_detalle div ul {
-    background-color: #29768d;
+.Servicios_detalle div p {
+    background-color:#002331;
     color: white;
-    font-size: 20px;
-    text-align: center
+    font-size: 25px;
+    text-align: center justify;
+    padding: 10px;
 }
-
+.servicio{
+    border: 5px solid white;
+}
+.servicio button{
+    background-color: black;
+    color: white;
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+}
 /*-----------------------------Tienda---------------------------*/
 .Tienda-productos {
     display: grid;
@@ -321,7 +329,7 @@ body section h2 {
 
 
 /*-----------------------------Contacto---------------------------*/
-.Contacto_mapa {
+.contacto_mapa {
     background-color: #173648;
     padding: 10px;
     color: black;
@@ -330,7 +338,7 @@ body section h2 {
     align-items: center;
 }
 
-.Contacto_formulario {
+.contacto_formulario {
     font-size: 20px !important;
     background-position: space-around;
     border: 10px solid;
@@ -338,19 +346,19 @@ body section h2 {
     color: white;
 }
 
-.Contacto_mapa iframe {
+.contacto_mapa iframe {
     height: 400px;
     width: 1100px;
 }
 
-.Contacto_propaganda {
+.contacto_propaganda {
     padding: 15px;
     display: flex;
     justify-content: space-evenly;
     background-color: #12657a;
 }
 
-.Contacto_propaganda iframe {
+.contacto_propaganda iframe {
     height: 300px;
     width: 1100px;
 }
@@ -372,7 +380,7 @@ Footer hr {
     border-style: double;
 }
 
-.RedesSociales {
+.redessociales {
     text-decoration: none;
     display: flex;
     justify-content: space-evenly;
@@ -385,7 +393,7 @@ footer ul li {
     color: white
 }
 
-.RedesSociales i:hover {
+.redessociales i:hover {
     width: 32%;
 }
 
@@ -404,15 +412,9 @@ footer ul li {
     .footer div a img {
         width: 130px;
     }
-}
-
-@media screen and (max-width: 1050px) {
     .footer p {
         font-size: 23px;
     }
-}
-
-@media screen and (max-width: 1050px) {
     .footer ul li {
         margin: 0px;
         border: 0px;
@@ -425,22 +427,13 @@ footer ul li {
     .logobox img {
         width: 15vh;
     }
-}
-
-@media screen and (max-width: 850px) {
     .header nav ul li {
         font-size: 15px;
     }
-}
-
-@media screen and (max-width: 850px) {
     .hero {
         padding: 60px;
         width: 100%;
     }
-}
-
-@media screen and (max-width: 850px) {
     .hero h1 {
         margin-top: 0px;
         font-size: 50px;
@@ -448,17 +441,11 @@ footer ul li {
         padding: 10px;
         margin-bottom: 30px;
     }
-}
-
-@media screen and (max-width: 850px) {
     .hero p {
         font-size: 25px;
         margin: 8px;
         margin-bottom: 30px;
     }
-}
-
-@media screen and (max-width: 850px) {
     .hero a {
         font-size: 20px;
         background-color: white;
@@ -467,9 +454,6 @@ footer ul li {
         padding: 15px;
         margin: 7px;
     }
-}
-
-@media screen and (max-width: 850px) {
     main h3 {
         background-color: #bfcbf8(255, 0, 0, 0.363);
         color: white;
@@ -477,15 +461,9 @@ footer ul li {
         text-align: center;
         padding: 15px;
     }
-}
-
-@media screen and (max-width: 850px) {
     .index_profesionales h4 {
         font-size: 3.6vw;
     }
-}
-
-@media screen and (max-width: 850px) {
     .index_profesionales div img {
         width: 250px;
         height: 250px;
@@ -494,21 +472,12 @@ footer ul li {
         margin: 10px;
         margin-bottom: 40px;
     }
-}
-
-@media screen and (max-width: 850px) {
     .footer .img {
         width: 12vw;
     }
-}
-
-@media screen and (max-width: 850px) {
     .footer p {
         font-size: 19px;
     }
-}
-
-@media screen and (max-width: 470px) {
     .footer section ul li img {
         width: 22%;
     }
@@ -520,34 +489,20 @@ footer ul li {
     .footer section ul li img {
         width: 25%;
     }
-}
-
-@media screen and (max-width: 470px) {
     .header div a img {
         width: 10vh;
     }
-}
-
-@media screen and (max-width: 470px) {
     .header nav ul li {
         font-size: 9px;
     }
 }
-
 /*---NOSOTROS---!*/
 /*-------------------------850px-------------------------------!*/
-@media screen and (max-width: 0px) {
-    .nosotros_mapa iframe {
-        height: 500000px;
-        width: 80vw;
-        padding: 555px;
-    }
-}
 
-@media screen and (max-width: 0px) {
-    .nosotros_mapa p {
+@media screen and (max-width: 850px) {
+    .nosotros_mapa div p{
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         margin-bottom: 20px;
     }
 }
