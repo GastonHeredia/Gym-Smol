@@ -300,16 +300,25 @@ body section h2 {
 }
 /*-----------------------------Tienda---------------------------*/
 .Tienda-productos {
+    background-color: #00b3e8;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    justify-content: space-evenly;
+   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    gap: 15px;
     padding: 20px;
+}
+.Tienda-productos h2 {
+    background-color:#001b2c;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding: 15px;
 }
 
 .Tienda-productos .Proteina_titulo,
 .Tienda-productos .Creatina_titulo,
 .Tienda-productos .Otro_titulo {
-    grid-column: span 7; /* Span across three columns */
+    grid-column: span 5; /* Span across three columns */
     text-align: center;
 }
 
@@ -325,6 +334,9 @@ body section h2 {
     width: 100%;
     height: auto;
     max-width: 200px;
+    position: center;
+    size: cover;
+    border: 5px solid black;
 }
 
 
@@ -334,11 +346,12 @@ body section h2 {
     padding: 10px;
     color: black;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .contacto_formulario {
+    height: auto;
+    width: 300px;
     font-size: 20px !important;
     background-position: space-around;
     border: 10px solid;
@@ -347,8 +360,8 @@ body section h2 {
 }
 
 .contacto_mapa iframe {
-    height: 400px;
-    width: 1100px;
+    height: 23vw;
+    width: 75vw;
 }
 
 .contacto_propaganda {
@@ -407,6 +420,14 @@ footer ul li {
 /*-----------------------------Responsiv---------------------------!*/
 
 /*---INDEX---!*/
+/*-------------------------1350px-------------------------------!*/
+@media screen and (max-width: 1350px) {
+    .contacto_mapa {
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+}
+
 /*-------------------------1050px-------------------------------!*/
 @media screen and (max-width: 1050px) {
     .footer div a img {
@@ -472,6 +493,16 @@ footer ul li {
         margin: 10px;
         margin-bottom: 40px;
     }
+    
+    .titulo_servicios h2{
+        font-size: 35px;
+    }
+    
+    .Servicios_desgloce div img {
+        width: 200px;
+        height: 200px;
+        border: 5px solid white;
+    }
     .footer .img {
         width: 12vw;
     }
@@ -482,6 +513,27 @@ footer ul li {
         width: 22%;
     }
 }
+/*-------------------------630px-------------------------------!*/
+@media screen and (max-width: 630px) {
+    .Servicios_detalle h4 {
+        font-size: 30px;
+    }
+    .Servicios_detalle div p {
+        font-size: 20px;
+    }
+    .servicio button{
+        width: 140px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .contacto_formulario {
+        width: 200px;
+        font-size: 15px !important;
+        border: 5px solid;
+
+    }
+    }
+
 
 /*-------------------------470px-------------------------------!*/
 
@@ -495,13 +547,25 @@ footer ul li {
     .header nav ul li {
         font-size: 9px;
     }
+    .titulo_servicios h2{
+        font-size: 25px;
+    }
+    .Servicios_detalle h4 {
+        font-size: 30px;
+    }
+    .Servicios_detalle div p {
+        font-size: 15px;
+    }
+    .contacto_mapa iframe {
+        height: 30vw;
+        width: 80vw;
+    }
 }
 /*---NOSOTROS---!*/
 /*-------------------------850px-------------------------------!*/
 
 @media screen and (max-width: 850px) {
     .nosotros_mapa div p{
-        color: white;
         font-size: 17px;
         margin-bottom: 20px;
     }
