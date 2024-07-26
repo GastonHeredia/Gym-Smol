@@ -49,17 +49,17 @@ nav ul li a:hover {
 
 /*--------------------------------banners--------------------------*/
 
-.Banner_index img {
+.banner_index img {
     height: auto;
     width: 100%;
 }
 
-.Banner_servicios img {
+.banner_servicios img {
     height: auto;
     width: 100%;
 }
 
-.Banner_tienda img {
+.banner_tienda img {
     height: auto;
     width: 100%;
 }
@@ -193,13 +193,14 @@ main h3 {
 .nosotros_cuerpo ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .nosotros_cuerpo li {
-    margin: 10px 80px;
+    margin: 40px 60px;
 }
 
 .nosotros_cuerpo a {
@@ -209,7 +210,7 @@ main h3 {
 .nosotros_cuerpo button {
     height: 100px;
     width: 150px;
-    padding: 10px 20px;
+    padding: 20px;
     font-size: 16px;
     background-color: #20d8d8;
     color: #fff;
@@ -223,14 +224,14 @@ main h3 {
 
 
 .publicidad {
-    padding: 20px;
+    padding: 15px 5px;
     text-align: center;
     background-color: #1db5ba;
 }
 
 .publicidad iframe {
-    height: 20vw;
-    width: 85vw;
+    height: 50%;
+    width: 97%;
 }
 
 /*-----------------------------Servicios---------------------------*/
@@ -242,7 +243,7 @@ body section h2 {
     text-align: center;
 }
 
-.Servicios_desgloce {
+.servicios_desgloce {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -256,7 +257,7 @@ body section h2 {
     border: 5px solid black;
 }
 
-.Servicios_desgloce div img {
+.servicios_desgloce div img {
     background-position: center;
     /* Centrar la imagen dentro del div */
     width: 300px;
@@ -265,17 +266,17 @@ body section h2 {
     border-radius: 8%;
 }
 
-.Servicios_detalle {
+.servicios_detalle {
     background-color: #00475c;
     padding: 30px;
     border: 5px solid black;
 }
 
-.Servicios_detalle div {
+.servicios_detalle div {
     margin: 15px;
 }
 
-.Servicios_detalle h4 {
+.servicios_detalle h4 {
     padding: 15px;
     background-color: #00ffff;
     color: black;
@@ -284,7 +285,7 @@ body section h2 {
     border: 5px solid #002331;
 }
 
-.Servicios_detalle div p {
+.servicios_detalle div p {
     background-color: #002331;
     color: white;
     font-size: 25px;
@@ -441,6 +442,9 @@ footer ul li {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .nosotros_cuerpo li {
+        margin: 10px 20px;
+    }
 }
 
 /*-------------------------1050px-------------------------------!*/
@@ -522,6 +526,9 @@ footer ul li {
         font-size: 17px;
         margin-bottom: 20px;
     }
+    .nosotros_cuerpo li {
+        margin: 20px 70px;
+    }
     .titulo_servicios h2 {
         font-size: 35px;
     }
@@ -553,6 +560,11 @@ footer ul li {
 
 /*-------------------------740px-------------------------------!*/
 @media screen and (max-width: 740px) {
+    .nosotros_mapa iframe {
+        height: 30%;
+        width: 100%;
+        padding: 20px;
+    }
     .card {
         align-items: center !important;
         width: 200px;
@@ -577,6 +589,9 @@ footer ul li {
 
 /*-------------------------630px-------------------------------!*/
 @media screen and (max-width: 630px) {
+    .nosotros_cuerpo li {
+        margin: 10px 30px;
+    }
     .Servicios_detalle h4 {
         font-size: 30px;
     }
