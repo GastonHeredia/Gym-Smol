@@ -248,7 +248,8 @@ body section h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #002331;
-    padding: 20px;
+    padding: 10px;
+
 }
 
 .titulo_servicios h2 {
@@ -257,11 +258,13 @@ body section h2 {
     border: 5px solid black;
 }
 
+
+
 .servicios_desgloce div img {
     background-position: center;
     /* Centrar la imagen dentro del div */
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 8px solid white;
     border-radius: 8%;
 }
@@ -298,8 +301,9 @@ body section h2 {
 }
 
 .servicio button {
-    background-color: black;
+    background-color: #002331;
     color: white;
+    border: 2px solid black;
     width: 170px;
     height: 60px;
     font-size: 20px;
@@ -313,6 +317,7 @@ body section h2 {
 .tienda-productos div {
     background-color: #06121e;
     color: white;
+    padding: 10px;
 }
 
 .titulo_productos h4 {
@@ -327,7 +332,7 @@ body section h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 15px;
+    padding: 15px;
 }
 
 .tienda-productos article img {
@@ -361,14 +366,17 @@ body section h2 {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 15px;
 }
+
 .contacto_mapa {
     grid-column: 1/4;
     grid-row: 1/4;
 }
-.contacto_mapa iframe{
+
+.contacto_mapa iframe {
     height: 100%;
     width: 100%;
 }
+
 .contacto_formulario {
     grid-column: 4/5;
     grid-row: 1/4;
@@ -442,10 +450,21 @@ footer ul li {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .nosotros_cuerpo li {
         margin: 10px 20px;
     }
 }
+
+/*-------------------------1060px-------------------------------!*/
+@media screen and (max-width: 1060px) {
+    .servicios_desgloce div img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
 
 /*-------------------------1050px-------------------------------!*/
 @media screen and (max-width: 1050px) {
@@ -522,18 +541,17 @@ footer ul li {
         margin: 10px;
         margin-bottom: 40px;
     }
+
     .nosotros_mapa div p {
         font-size: 17px;
         margin-bottom: 20px;
     }
+
     .nosotros_cuerpo li {
         margin: 20px 70px;
     }
-    .titulo_servicios h2 {
-        font-size: 35px;
-    }
 
-    .Servicios_desgloce div img {
+    .servicios_desgloce div img {
         width: 200px;
         height: 200px;
         border: 5px solid white;
@@ -550,9 +568,11 @@ footer ul li {
     .footer section ul li img {
         width: 22%;
     }
+
     .contacto_mapa {
         grid-column: 1/3 !important;
     }
+
     .contacto_formulario {
         grid-column: 3/5 !important;
     }
@@ -564,6 +584,10 @@ footer ul li {
         height: 30%;
         width: 100%;
         padding: 20px;
+    }
+    .servicios_desgloce div img {
+        width: 231px;
+        height: 231px;
     }
     .card {
         align-items: center !important;
@@ -592,11 +616,12 @@ footer ul li {
     .nosotros_cuerpo li {
         margin: 10px 30px;
     }
-    .Servicios_detalle h4 {
+
+    .servicios_detalle h4 {
         font-size: 30px;
     }
 
-    .Servicios_detalle div p {
+    .servicios_detalle div p {
         font-size: 20px;
     }
 
@@ -606,12 +631,14 @@ footer ul li {
         font-size: 15px;
     }
 }
+
 /*-------------------------550px-------------------------------!*/
 @media screen and (max-width: 550px) {
     .contacto_mapa {
         grid-row: 3/5 !important;
         grid-column: 1/5 !important;
     }
+
     .contacto_formulario {
         grid-column: 1/5 !important;
         grid-row: 1/3 !important;
@@ -630,12 +657,21 @@ footer ul li {
         width: 28vw;
         height: 42vw;
     }
+
     .titulo_productos h4 {
         font-size: 35px;
     }
 
     .card-body {
         font-size: 10px;
+    }
+    .servicios_desgloce div {
+        margin: 2.5px;
+    }
+    .servicios_desgloce div img {
+        width: 180px;
+        height: 180px;
+        border: 4px solid white;
     }
 }
 
@@ -660,13 +696,16 @@ footer ul li {
         font-size: 25px;
     }
 
-    .Servicios_detalle h4 {
+    .servicios_detalle h4 {
         font-size: 30px;
     }
 
-    .Servicios_detalle div p {
+    .servicios_detalle div p {
         font-size: 15px;
     }
-    
-}
+    .servicios_desgloce div img {
+        width: 160px;
+        height: 160px;
+    }
 
+}
