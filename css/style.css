@@ -301,7 +301,7 @@ body section h2 {
 .Tienda-productos .Proteina_titulo,
 .Tienda-productos .Creatina_titulo,
 .Tienda-productos .Otro_titulo {
-    grid-column: span 5; /* Span across three columns */
+    grid-column: span 7; /* Span across three columns */
     text-align: center;
 }
 
