@@ -203,6 +203,13 @@ main .servicios_detalle {
       font-size: 40px;
       text-align: center;
       border: 5px solid #002331; }
+    main .servicios_detalle .servicio p {
+      background-color: #002331;
+      color: white;
+      font-size: 25px;
+      text-align: justify;
+      padding: 10px;
+      border: 5px solid #002331; }
     main .servicios_detalle .servicio a {
       padding: 10px 15px 25px 15px;
       background-color: #00ffff;
@@ -216,13 +223,6 @@ main .servicios_detalle {
         width: 170px;
         height: 60px;
         font-size: 20px; }
-    main .servicios_detalle .servicio p {
-      background-color: #002331;
-      color: white;
-      font-size: 25px;
-      text-align: justify;
-      padding: 10px;
-      border: 5px solid #002331; }
 
 /**_____________________________________ Tienda _____________________________________**/
 main .banner_tienda img {
@@ -241,23 +241,23 @@ main .tienda-productos {
       font-size: 50px;
       border: 5px solid black;
       text-align: center; }
-  main .tienda-productos .article {
-    max-width: 230px;
-    height: 250px;
-    margin-top: 5px;
-    border: 3px solid black !important; }
-    main .tienda-productos .article .card {
+  main .tienda-productos article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px; }
+    main .tienda-productos article .card {
       align-items: center !important;
       width: 250px;
       height: 330px;
       border: 3px solid black !important;
       margin-top: 10px; }
-      main .tienda-productos .article .card img {
+      main .tienda-productos article .card img {
         max-width: 230px;
         height: 250px;
         margin-top: 5px;
         border: 3px solid black !important; }
-      main .tienda-productos .article .card .card-body {
+      main .tienda-productos article .card .card-body {
         font-size: 18px; }
 
 /**_____________________________________ Contacto _____________________________________**/
@@ -319,52 +319,56 @@ footer {
       border: 1px;
       padding: 10px; }
 
+/*-----------------------------Responsiv---------------------------!*/
+/*---INDEX---!*/
 /*-------------------------1350px-------------------------------!*/
 @media screen and (max-width: 1350px) {
-  .contacto {
+  main section .contacto {
     flex-wrap: wrap;
     justify-content: space-around; }
-  .nosotros_cuerpo li {
-    margin: 10px 20px; } }
+  .nosotros_cuerpo ul {
+    margin: 5px; }
+  .nosotros_cuerpo ul li {
+    margin: 25px 25px; } }
 
 /*-------------------------1060px-------------------------------!*/
 @media screen and (max-width: 1060px) {
-  .servicios_desgloce div img {
+  main .servicios_desgloce div img {
     width: 350px;
     height: 350px;
     margin: 2px; } }
 
 /*-------------------------1050px-------------------------------!*/
 @media screen and (max-width: 1050px) {
-  .footer div a img {
-    width: 130px; }
-  .footer p {
+  .footer section div a img {
+    width: 150; }
+  .footer section p {
     font-size: 23px; }
-  .footer ul li {
+  .footer .redessociales ul li {
     margin: 0px;
     border: 0px;
     padding: 0px; } }
 
 /*-------------------------850px-------------------------------!*/
 @media screen and (max-width: 850px) {
-  .logobox img {
+  .header div a img {
     width: 15vh; }
   .header nav ul li {
     font-size: 15px; }
-  .hero {
+  main .hero {
     padding: 60px;
     width: 100%; }
-  .hero h1 {
+  main .hero h1 {
     margin-top: 0px;
     font-size: 50px;
     border: 5px solid white;
     padding: 10px;
     margin-bottom: 30px; }
-  .hero p {
+  main .hero p {
     font-size: 25px;
     margin: 8px;
     margin-bottom: 30px; }
-  .hero a {
+  main .hero a {
     font-size: 20px;
     background-color: white;
     text-decoration: none;
@@ -377,115 +381,126 @@ footer {
     font-size: 4vw;
     text-align: center;
     padding: 15px; }
-  .index_profesionales h4 {
-    font-size: 3.6vw; }
-  .index_profesionales div img {
+  main .index_profesionales div h4 {
+    font-size: 4vw; }
+  main .index_profesionales div a img {
     width: 250px;
     height: 250px;
     border: 8px solid #8389bb;
     border-radius: 8%;
-    margin: 10px;
+    margin: 50px;
     margin-bottom: 40px; }
-  .nosotros_mapa div p {
+  main .nosotros_mapa div p {
     font-size: 17px;
     margin-bottom: 20px; }
-  .nosotros_cuerpo li {
+  main .nosotros_cuerpo ul li {
     margin: 20px 70px; }
-  .servicios_desgloce div img {
+  main .servicios_desgloce div img {
     width: 300px;
     height: 300px;
     border: 5px solid white;
     margin: 2px; }
-  .footer .img {
+  .footer section div a img {
     width: 12vw; }
-  .footer p {
+  .footer section p {
     font-size: 19px; }
   .footer section ul li img {
     width: 22%; }
-  .contacto_mapa {
+  main section .contacto_mapa {
     grid-column: 1/3 !important; }
-  .contacto_formulario {
+  main section .contacto_formulario {
     grid-column: 3/5 !important; } }
 
 /*-------------------------740px-------------------------------!*/
 @media screen and (max-width: 740px) {
-  .nosotros_mapa iframe {
+  main .index_profesionales div h4 {
+    font-size: 4vw; }
+  main .index_profesionales div a img {
+    width: 250px;
+    height: 250px;
+    border: 8px solid #8389bb;
+    border-radius: 8%;
+    margin: 20px;
+    margin-bottom: 40px; }
+  main .nosotros_mapa iframe {
     height: 30%;
     width: 100%;
     padding: 20px; }
-  .servicios_desgloce div img {
+  main .servicios_desgloce div img {
     width: 250px;
     height: 250px;
     margin: 5px; }
-  .card {
+  main .tienda-productos .card {
     align-items: center !important;
     width: 200px;
     height: 290px;
     border: 3px solid black !important; }
-  .tienda-productos article img {
-    width: 180px;
+  main .tienda-productos article div img {
+    width: 230px;
     height: 210px; }
-  .titulo_productos h4 {
+  main .titulo_productos h4 {
     font-size: 38px; }
-  .card-body {
+  main .tienda-productos article .card-body {
     font-size: 15px; } }
 
 /*-------------------------630px-------------------------------!*/
 @media screen and (max-width: 630px) {
-  .nosotros_cuerpo li {
+  main .nosotros_cuerpo ul li {
     margin: 10px 30px; }
-  .servicios_detalle h4 {
+  main .servicios_detalle div h4 {
     font-size: 30px; }
-  .servicios_detalle div p {
+  main .servicios_detalle div p {
     font-size: 20px; }
-  .servicio button {
+  main .servicios_detalle .servicio a button {
     width: 140px;
     height: 50px;
     font-size: 15px; } }
 
 /*-------------------------550px-------------------------------!*/
 @media screen and (max-width: 550px) {
-  .contacto_mapa {
+  main .index_profesionales div h4 {
+    font-size: 30px; }
+  main section .contacto_mapa {
     grid-row: 3/5 !important;
     grid-column: 1/5 !important; }
-  .contacto_formulario {
+  main section .contacto_formulario {
     grid-column: 1/5 !important;
     grid-row: 1/3 !important;
     margin-bottom: 15px; } }
 
 /*-------------------------510px-------------------------------!*/
 @media screen and (max-width: 510px) {
-  .card {
+  main .tienda-productos .card {
     width: 30vw;
     height: 45vw; }
-  .tienda-productos article img {
-    width: 28vw;
-    height: 42vw; }
-  .titulo_productos h4 {
+  main .tienda-productos article div img {
+    width: 300px;
+    height: 150px; }
+  main .titulo_productos h4 {
     font-size: 35px; }
-  .card-body {
+  main .tienda-productos article .card-body {
     font-size: 10px; }
-  .servicios_desgloce div {
+  main .servicios_desgloce div {
     margin: 2.5px; }
-  .servicios_desgloce div img {
+  main .servicios_desgloce div img {
     width: 180px;
     height: 180px;
     border: 4px solid white; } }
 
 /*-------------------------470px-------------------------------!*/
 @media screen and (max-width: 470px) {
-  .footer section ul li img {
+  .footer section ul li a img {
     width: 25%; }
   .header div a img {
     width: 10vh; }
-  .header nav ul li {
-    font-size: 9px; }
-  .titulo_servicios h2 {
+  .header nav ul li a {
+    font-size: 12px; }
+  main .titulo_servicios h2 {
     font-size: 25px; }
-  .servicios_detalle h4 {
+  main .servicios_detalle div h4 {
     font-size: 30px; }
-  .servicios_detalle div p {
+  main .servicios_detalle div p {
     font-size: 15px; }
-  .servicios_desgloce div img {
+  main .servicios_desgloce div img {
     width: 160px;
     height: 160px; } }

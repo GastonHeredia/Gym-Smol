@@ -181,15 +181,15 @@ main h3 {
     margin: 0;
 }
 
-.nosotros_cuerpo li {
+.nosotros_cuerpo ul li {
     margin: 40px 60px;
 }
 
-.nosotros_cuerpo a {
+.nosotros_cuerpo ul li a {
     text-decoration: none;
 }
 
-.nosotros_cuerpo button {
+.nosotros_cuerpo ul li a button {
     height: 100px;
     width: 150px;
     padding: 20px;
@@ -200,7 +200,7 @@ main h3 {
     border-radius: 8px;
 }
 
-.nosotros_cuerpo button:hover {
+.nosotros_cuerpo ul li a  button:hover {
     background-color: #0056b3;
 }
 
@@ -426,13 +426,16 @@ footer ul li {
 /*---INDEX---!*/
 /*-------------------------1350px-------------------------------!*/
 @media screen and (max-width: 1350px) {
-    .contacto {
+    main section .contacto {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .nosotros_cuerpo li {
-        margin: 10px 20px;
+    .nosotros_cuerpo ul {
+        margin: 5px;
+    }
+    .nosotros_cuerpo ul li {
+        margin: 25px 25px;
     }
 }
 
@@ -511,7 +514,7 @@ footer ul li {
     }
 
     .index_profesionales h4 {
-        font-size: 3.6vw;
+        font-size: 2vw;
     }
 
     .index_profesionales div img {
@@ -519,7 +522,7 @@ footer ul li {
         height: 250px;
         border: 8px solid #8389bb;
         border-radius: 8%;
-        margin: 10px;
+        margin: 50px;
         margin-bottom: 40px;
     }
 
@@ -528,7 +531,7 @@ footer ul li {
         margin-bottom: 20px;
     }
 
-    .nosotros_cuerpo li {
+    .nosotros_cuerpo ul li {
         margin: 20px 70px;
     }
 
@@ -562,6 +565,19 @@ footer ul li {
 
 /*-------------------------740px-------------------------------!*/
 @media screen and (max-width: 740px) {
+    .index_profesionales h4 {
+        font-size: 4vw;
+    }
+
+    .index_profesionales div a img {
+        width: 250px;
+        height: 250px;
+        border: 8px solid #8389bb;
+        border-radius: 8%;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
     .nosotros_mapa iframe {
         height: 30%;
         width: 100%;
@@ -596,7 +612,7 @@ footer ul li {
 
 /*-------------------------630px-------------------------------!*/
 @media screen and (max-width: 630px) {
-    .nosotros_cuerpo li {
+    .nosotros_cuerpo ul li {
         margin: 10px 30px;
     }
 
@@ -617,6 +633,9 @@ footer ul li {
 
 /*-------------------------550px-------------------------------!*/
 @media screen and (max-width: 550px) {
+    .index_profesionales h4 {
+        font-size: 30px;
+    }
     .contacto_mapa {
         grid-row: 3/5 !important;
         grid-column: 1/5 !important;

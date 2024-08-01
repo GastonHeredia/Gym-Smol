@@ -1,8 +1,9 @@
 /*-----------------------------MAIN---------------------------*/
 /**_____________________________________ Inicio_____________________________________**/
-main{
+main {
     background-color: #bfcbf8;
-    .hero{
+
+    .hero {
         padding: 100px;
         width: 100%;
         text-align: center;
@@ -12,7 +13,8 @@ main{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        h1{
+
+        h1 {
             background-color: #140f07a4;
             margin-top: 33px;
             font-size: 80px;
@@ -23,12 +25,14 @@ main{
             padding: 15px;
             margin-bottom: 50px;
         }
-        p{
+
+        p {
             font-size: 35px;
             margin: 10px;
             margin-bottom: 50px;
         }
-        a{
+
+        a {
             font-size: 25px;
             background-color: white;
             text-decoration: none;
@@ -39,30 +43,35 @@ main{
             border-radius: 10%;
         }
     }
-    h3{
+
+    h3 {
         background-color: #bfcbf8(255, 0, 0, 0.363);
         color: white;
         font-size: 4vw;
         text-align: center;
         padding: 15px;
     }
-    .index_profesionales{
+
+    .index_profesionales {
         background-color: #bfcbf8;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         border-color: #8389bb;
-        div{
-            h4{
+
+        div {
+            h4 {
                 color: #8389bb;
                 text-align: center;
                 font-style: oblique;
                 font-style: initial;
                 font-size: 2vw;
             }
-            a{
-                img{
-                    background-position: center; /* Centrar la imagen dentro del div */
+
+            a {
+                img {
+                    background-position: center;
+                    /* Centrar la imagen dentro del div */
                     width: 20vw;
                     height: 20vw;
                     border: 10px solid #8389bb;
@@ -76,15 +85,17 @@ main{
 }
 
 /**_____________________________________ Nosotros_____________________________________**/
-main{
-    .nosotros_mapa{
+main {
+    .nosotros_mapa {
         background-color: #1db5ba;
         display: wrap;
         flex-wrap: wrap;
-        div{
+
+        div {
             margin-left: 20px;
             text-align: start;
-            h4{
+
+            h4 {
                 padding: 50px 0px 0px 0px;
                 color: white;
                 text-align: center;
@@ -93,37 +104,44 @@ main{
                 font-size: 30px;
                 margin-bottom: 50px;
             }
-            p{
+
+            p {
                 color: white;
                 font-size: 25px;
                 margin-bottom: 50px;
             }
         }
-        iframe{
+
+        iframe {
             height: 20vw;
             width: 98.96vw;
             padding: 20px;
         }
     }
-    .nosotros_cuerpo{
+
+    .nosotros_cuerpo {
         background-color: #122c43;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 20px;
         box-sizing: border-box;
-        ul{
+
+        ul {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             list-style: none;
             padding: 0;
             margin: 0;
-            li{
+
+            li {
                 margin: 40px 60px;
-                a{
+
+                a {
                     text-decoration: none;
-                    button{
+
+                    button {
                         height: 100px;
                         width: 150px;
                         padding: 20px;
@@ -132,7 +150,8 @@ main{
                         color: #fff;
                         border: none;
                         border-radius: 8px;
-                        &:hover{
+
+                        &:hover {
                             background-color: #0056b3;
                         }
                     }
@@ -140,12 +159,14 @@ main{
             }
         }
     }
-    .publicidad{
+
+    .publicidad {
         padding: 15px 5px;
         text-align: center;
         background-color: #1db5ba;
-        div{
-            iframe{
+
+        div {
+            iframe {
                 height: 50%;
                 width: 97%;
             }
@@ -155,15 +176,16 @@ main{
 }
 
 /**_____________________________________ Servicios_____________________________________**/
-main{
-    .banner_servicios{
-        img{
+main {
+    .banner_servicios {
+        img {
             height: auto;
             width: 100%;
         }
     }
-    .titulo_servicios{
-        h2{
+
+    .titulo_servicios {
+        h2 {
             color: white;
             margin: 0px;
             border: 5px solid black;
@@ -174,15 +196,18 @@ main{
             text-align: center;
         }
     }
-    .servicios_desgloce{
+
+    .servicios_desgloce {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         background-color: #1da1c8;
         padding: 10px;
-        div{
-            img{
-                background-position: center;    /* Centrar la imagen dentro del div */
+
+        div {
+            img {
+                background-position: center;
+                /* Centrar la imagen dentro del div */
                 width: 250px;
                 height: 250px;
                 border: 8px solid white;
@@ -190,67 +215,72 @@ main{
             }
         }
     }
-    .servicios_detalle{
+
+    .servicios_detalle {
         background-color: #00475c;
         padding: 30px;
         border: 5px solid black;
-        .servicio{
-            
+
+        .servicio {
             margin: 15px;
             text-align: center;
-            h4{
+
+            h4 {
                 padding: 15px;
                 background-color: #00ffff;
                 color: black;
                 font-size: 40px;
                 text-align: center;
                 border: 5px solid #002331;
-                
+
             }
-            a{
+            p {
+                background-color: #002331;
+                color: white;
+                font-size: 25px;
+                text-align: justify ;
+                padding: 10px;
+                border: 5px solid #002331;
+            }
+
+            a {
                 padding: 10px 15px 25px 15px;
                 background-color: #00ffff;
                 color: black;
                 font-size: 40px;
                 border: 5px solid #002331;
-                    button{
-                        background-color: #002331;
-                        color: white;
-                        border: 2px solid black;
-                        width: 170px;
-                        height: 60px;
-                        font-size: 20px;
-                    }
+
+                button {
+                    background-color: #002331;
+                    color: white;
+                    border: 2px solid black;
+                    width: 170px;
+                    height: 60px;
+                    font-size: 20px;
                 }
-            p{
-                background-color: #002331;
-                color: white;
-                font-size: 25px;
-                text-align: justify;
-                padding: 10px;
-                border: 5px solid #002331;
             }
         }
     }
 }
 
 /**_____________________________________ Tienda _____________________________________**/
-main{
-    .banner_tienda{
-        img{
+main {
+    .banner_tienda {
+        img {
             height: auto;
             width: 100%;
+        }
     }
 
-
-    }
-    .tienda-productos{
+    .tienda-productos {
         background-color: #0f384e;
-        .titulo_productos{
+
+        .titulo_productos {
             background-color: #06121e;
             color: white;
             padding: 10px;
-            h4{
+
+            h4 {
                 background-color: #2bc9c8;
                 color: white;
                 font-size: 50px;
@@ -258,24 +288,28 @@ main{
                 text-align: center;
             }
         }
-        .article{
-            max-width: 230px;
-            height: 250px;
-            margin-top: 5px;
-            border: 3px solid black !important;
-            .card{
+
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 15px;
+
+            .card {
                 align-items: center !important;
                 width: 250px;
                 height: 330px;
                 border: 3px solid black !important;
                 margin-top: 10px;
-                img{
+
+                img {
                     max-width: 230px;
-                height: 250px;
-                margin-top: 5px;
-                border: 3px solid black !important;
+                    height: 250px;
+                    margin-top: 5px;
+                    border: 3px solid black !important;
                 }
-                .card-body{
+
+                .card-body {
                     font-size: 18px;
                 }
             }
@@ -284,8 +318,8 @@ main{
 }
 
 /**_____________________________________ Contacto _____________________________________**/
-main{
-    .contacto{
+main {
+    .contacto {
         background-color: #2bc6c8;
         margin: 0px;
         padding: 15px;
@@ -293,15 +327,18 @@ main{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         column-gap: 15px;
-        .contacto_mapa{
+
+        .contacto_mapa {
             grid-column: 1/4;
             grid-row: 1/4;
-            iframe{
+
+            iframe {
                 height: 100%;
                 width: 100%;
             }
         }
-        .contacto_formulario{
+
+        .contacto_formulario {
             grid-column: 4/5;
             grid-row: 1/4;
             font-size: 20px !important;
@@ -312,12 +349,14 @@ main{
             color: white;
         }
     }
-    .contacto_propaganda{
+
+    .contacto_propaganda {
         padding: 15px;
         display: flex;
         justify-content: space-evenly;
         background-color: #12657a;
-        iframe{
+
+        iframe {
             height: 300px;
             width: 98%;
         }
