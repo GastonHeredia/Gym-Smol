@@ -1,0 +1,106 @@
+/*-----------------------------MAIN---------------------------*/
+/**_____________________________________ Inicio_____________________________________**/
+main {
+    background-color: #bfcbf8;
+
+    .hero {
+        padding: 100px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-image: url(../img/logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        h1 {
+            background-color: #140f07a4;
+            margin-top: 33px;
+            font-size: 80px;
+            font-style: oblique;
+            font-variant: inherit;
+            border: 10px solid white;
+            display: inline-block;
+            padding: 15px;
+            margin-bottom: 50px;
+            animation: h1index 3s ease-in-out;
+        }
+
+        p {
+            font-size: 35px;
+            margin: 10px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            font-size: 25px;
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            border: solid black;
+            border-radius: 10%;
+            transition-duration: 0.5s;
+                &:hover {
+                    background-color: #140f07;
+                    color: rgb(255, 255, 255);
+                    font-size: 250%;
+                }
+        }
+    }
+
+    h3 {
+        background-color: #bfcbf8(255, 0, 0, 0.363);
+        color: white;
+        font-size: 4vw;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .index_profesionales {
+        background-color: #bfcbf8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-color: #8389bb;
+
+        div {
+            h4 {
+                color: #8389bb;
+                text-align: center;
+                font-style: oblique;
+                font-style: initial;
+                font-size: 2vw;
+            }
+
+            a {
+                img {
+                    background-position: center;/* Centrar la imagen dentro del div */
+                    width: 20vw;
+                    height: 20vw;
+                    border: 10px solid #8389bb;
+                    border-radius: 8%;
+                    margin: 10px;
+                    margin-bottom: 60px;
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+
+/* Animación del H1 */
+@keyframes h1index {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

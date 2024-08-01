@@ -27,8 +27,10 @@ header{
                     display: block;
                     text-align: center;
                     padding: 14px 16px;
+                    transition-duration: 0.2s;
                     &:hover{
-                        background-color: #1d1c1c;
+                        color: black;
+                        background-color: white;
                     }
                 }
             }

@@ -1,32 +1,34 @@
 /*-----------------------------FOOTER---------------------------*/
-footer{
+footer {
     background-color: #140f07;
     color: white;
     text-align: center;
     font-size: 30px;
     padding: 25px;
-    .logobox{
-        a{
-            
-            img{
+
+    .logobox {
+        a {
+
+            img {
                 width: 150px;
             }
         }
     }
-    hr{
+
+    hr {
         border-style: double;
     }
-    section{
-        p{
-        }
-    }
-    .redessociales{
+
+
+
+    .redessociales {
         text-decoration: none;
         display: flex;
         justify-content: space-evenly;
         padding: 25px;
-        ul{
-            li{
+
+        ul {
+            li {
                 font-size: 5vw !important;
                 margin: 2vw 8vw !important;
                 color: white;
@@ -34,9 +36,13 @@ footer{
                 margin: 20px;
                 border: 1px;
                 padding: 10px;
-                a{  
+                a {
+                    transition: 0.5s;
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }
     }
-}
+    }

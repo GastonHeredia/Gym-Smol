@@ -1,0 +1,92 @@
+/**_____________________________________ Nosotros_____________________________________**/
+main {
+    .nosotros_mapa {
+        background-color: #1db5ba;
+        display: wrap;
+        flex-wrap: wrap;
+
+        div {
+            margin-left: 20px;
+            text-align: start;
+
+            h4 {
+                padding: 50px 0px 0px 0px;
+                color: white;
+                text-align: center;
+                font-style: oblique;
+                font-style: initial;
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                color: white;
+                font-size: 25px;
+                margin-bottom: 50px;
+            }
+        }
+
+        iframe {
+            height: 20vw;
+            width: 98.96vw;
+            padding: 20px;
+        }
+    }
+
+    .nosotros_cuerpo {
+        background-color: #122c43;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 40px 60px;
+
+                a {
+                    text-decoration: none;
+
+                    button {
+                        height: 100px;
+                        width: 150px;
+                        padding: 20px;
+                        font-size: 16px;
+                        background-color: #20d8d8;
+                        color: #fff;
+                        border: none;
+                        border-radius: 8px;
+                        transition-duration: 1s;
+                        &:hover {
+                            font-size: 130%;
+                            font-style: bold;
+                            background-color: #0056b3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .publicidad {
+        padding: 15px 5px;
+        text-align: center;
+        background-color: #1db5ba;
+
+        div {
+            iframe {
+                height: 50%;
+                width: 97%;
+            }
+        }
+    }
+
+}

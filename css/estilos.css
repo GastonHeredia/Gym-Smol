@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** RESET **/
 * {
   padding: 0;
@@ -28,9 +29,11 @@ header {
         text-decoration: none;
         display: block;
         text-align: center;
-        padding: 14px 16px; }
+        padding: 14px 16px;
+        transition-duration: 0.2s; }
         header nav ul li a:hover {
-          background-color: #1d1c1c; }
+          color: black;
+          background-color: white; }
 
 /*-----------------------------MAIN---------------------------*/
 /**_____________________________________ Inicio_____________________________________**/
@@ -55,7 +58,8 @@ main {
       border: 10px solid white;
       display: inline-block;
       padding: 15px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      animation: h1index 3s ease-in-out; }
     main .hero p {
       font-size: 35px;
       margin: 10px;
@@ -68,7 +72,12 @@ main {
       padding: 20px;
       margin: 10px;
       border: solid black;
-      border-radius: 10%; }
+      border-radius: 10%;
+      transition-duration: 0.5s; }
+      main .hero a:hover {
+        background-color: #140f07;
+        color: white;
+        font-size: 250%; }
   main h3 {
     background-color: #bfcbf8 255, 0, 0, 0.363;
     color: white;
@@ -95,7 +104,17 @@ main {
       border: 10px solid #8389bb;
       border-radius: 8%;
       margin: 10px;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      font-size: 2vw; }
+
+/* Animación del H1 */
+@keyframes h1index {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 /**_____________________________________ Nosotros_____________________________________**/
 main .nosotros_mapa {
@@ -148,8 +167,11 @@ main .nosotros_cuerpo {
           background-color: #20d8d8;
           color: #fff;
           border: none;
-          border-radius: 8px; }
+          border-radius: 8px;
+          transition-duration: 1s; }
           main .nosotros_cuerpo ul li a button:hover {
+            font-size: 130%;
+            font-style: bold;
             background-color: #0056b3; }
 
 main .publicidad {
@@ -216,13 +238,22 @@ main .servicios_detalle {
       color: black;
       font-size: 40px;
       border: 5px solid #002331; }
+      main .servicios_detalle .servicio a:hover {
+        background-color: #140f07;
+        color: #00ffff;
+        transition-duration: 0.5s; }
       main .servicios_detalle .servicio a button {
         background-color: #002331;
         color: white;
         border: 2px solid black;
         width: 170px;
         height: 60px;
-        font-size: 20px; }
+        font-size: 20px;
+        transition-duration: 0.5s; }
+        main .servicios_detalle .servicio a button:hover {
+          font-style: bold;
+          background-color: #00ffff;
+          color: black; }
 
 /**_____________________________________ Tienda _____________________________________**/
 main .banner_tienda img {
@@ -239,7 +270,6 @@ main .tienda-productos {
       background-color: #2bc9c8;
       color: white;
       font-size: 50px;
-      border: 5px solid black;
       text-align: center; }
   main .tienda-productos article {
     display: flex;
@@ -250,15 +280,20 @@ main .tienda-productos {
       align-items: center !important;
       width: 250px;
       height: 330px;
-      border: 3px solid black !important;
-      margin-top: 10px; }
+      margin-top: 10px;
+      transition: 0.5s; }
+      main .tienda-productos article .card:hover {
+        transform: scale(1.1); }
       main .tienda-productos article .card img {
         max-width: 230px;
         height: 250px;
-        margin-top: 5px;
-        border: 3px solid black !important; }
+        margin-top: 5px; }
       main .tienda-productos article .card .card-body {
         font-size: 18px; }
+
+/**____ EXTEND en la Tienda ____**/
+main .tienda-productos .titulo_productos h4, main .tienda-productos article .card, main .tienda-productos article .card img {
+  border: 3px solid black !important; }
 
 /**_____________________________________ Contacto _____________________________________**/
 main .contacto {
@@ -318,6 +353,10 @@ footer {
       margin: 20px;
       border: 1px;
       padding: 10px; }
+      footer .redessociales ul li a {
+        transition: 0.5s; }
+        footer .redessociales ul li a:hover {
+          color: white; }
 
 /*-----------------------------Responsiv---------------------------!*/
 /*---INDEX---!*/
@@ -491,6 +530,8 @@ footer {
 @media screen and (max-width: 470px) {
   .footer section ul li a img {
     width: 25%; }
+  .footer section div a img {
+    width: 10vh; }
   .header div a img {
     width: 10vh; }
   .header nav ul li a {

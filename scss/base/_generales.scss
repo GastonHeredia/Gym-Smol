@@ -1,7 +1,31 @@
 /** RESET **/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace; }
+
+// ____variables.scss_____//
+
+// Colores principales  //
+ //ESTOS SON TODOS LOS COLORES QUE UTILICE EN EL PROYECTO Y LA IDEA ERA GENERAR LA VARIABLE PARA QUE SOLO NECESITE CAMBIARLA DE ACÁ
+$color-uno: #140f07;
+$color-dos: #00475c;
+$color-tres: #1da1c8;
+$color-cuatro: white;
+$color-cinco: black;
+$color-seis: #00475c;
+$color-siete: #00475c;
+$color-ocho: #1da1c8;
+
+
+
+
+
+ // NO ME DEJA APLICAR LA VARIABLE POR COLOR PORQUE EN EL ROBOT Y ME DICE QUE HAY UN ERROR Y AUNQUE CAMBIE EL NOMBRE NO ME DEJA DE APARECER ERROR.
+
+
+
+ // En el main-inicio.scss hay una animación del H1
+ // en la main-tienda-scss hay una EXTEND (LA IDEA ES APLICARLO A TODO EL PROYECTO DESPUES)
+ // no pude aplicar mixin porque tambien me daba error (aunque tengo que repasarlo bien porque no se como aplicarlo a mi proyecto)

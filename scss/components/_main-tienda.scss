@@ -1,0 +1,64 @@
+/**_____________________________________ Tienda _____________________________________**/
+
+  main {
+    .banner_tienda {
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  
+    .tienda-productos {
+      background-color: #0f384e;
+  
+      .titulo_productos {
+        background-color: #06121e;
+        color: white;
+        padding: 10px;
+  
+        h4 {
+          background-color: #2bc9c8;
+          color: white;
+          font-size: 50px;
+          text-align: center;
+          @extend %borde3px ;
+        }
+      }
+  
+      article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 15px;
+  
+        .card {
+          align-items: center !important;
+          width: 250px;
+          height: 330px;
+          margin-top: 10px;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+          @extend %borde3px ;
+  
+          img {
+            max-width: 230px;
+            height: 250px;
+            margin-top: 5px;
+            @extend %borde3px ;
+          }
+  
+          .card-body {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  
+  /**____ EXTEND en la Tienda ____**/
+  %borde3px {
+    border: 3px solid black !important;
+  }
+  
