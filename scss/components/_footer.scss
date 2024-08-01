@@ -1,0 +1,42 @@
+/*-----------------------------FOOTER---------------------------*/
+footer{
+    background-color: #140f07;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+    .logobox{
+        a{
+            
+            img{
+                width: 150px;
+            }
+        }
+    }
+    hr{
+        border-style: double;
+    }
+    section{
+        p{
+        }
+    }
+    .redessociales{
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px;
+        ul{
+            li{
+                font-size: 5vw !important;
+                margin: 2vw 8vw !important;
+                color: white;
+                display: inline-block;
+                margin: 20px;
+                border: 1px;
+                padding: 10px;
+                a{  
+                }
+            }
+        }
+    }
+}

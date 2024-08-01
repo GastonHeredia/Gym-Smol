@@ -47,23 +47,6 @@ nav ul li a:hover {
     background-color: #1d1c1c;
 }
 
-/*--------------------------------banners--------------------------*/
-
-.banner_index img {
-    height: auto;
-    width: 100%;
-}
-
-.banner_servicios img {
-    height: auto;
-    width: 100%;
-}
-
-.banner_tienda img {
-    height: auto;
-    width: 100%;
-}
-
 
 /*--------------------------------Cuerpo---------------------------*/
 main {
@@ -135,9 +118,8 @@ main h3 {
     font-size: 2vw;
 }
 
-.index_profesionales div img {
-    background-position: center;
-    /* Centrar la imagen dentro del div */
+.index_profesionales div a img {
+    background-position: center;/* Centrar la imagen dentro del div */
     width: 20vw;
     height: 20vw;
     border: 10px solid #8389bb;
@@ -235,14 +217,21 @@ main h3 {
 }
 
 /*-----------------------------Servicios---------------------------*/
-body section h2 {
+.banner_servicios img {
+    height: auto;
+    width: 100%;
+}
+
+.titulo_servicios h2 {
+    color: white;
+    margin: 0px;
+    border: 5px solid black;
     padding: 15px;
     font-size: 60px;
     background-color: #00475c;
     border-color: white;
     text-align: center;
 }
-
 .servicios_desgloce {
     display: flex;
     flex-wrap: wrap;
@@ -251,18 +240,8 @@ body section h2 {
     padding: 10px;
 
 }
-
-.titulo_servicios h2 {
-    color: white;
-    margin: 0px;
-    border: 5px solid black;
-}
-
-
-
 .servicios_desgloce div img {
-    background-position: center;
-    /* Centrar la imagen dentro del div */
+    background-position: center;    /* Centrar la imagen dentro del div */
     width: 250px;
     height: 250px;
     border: 8px solid white;
@@ -275,11 +254,12 @@ body section h2 {
     border: 5px solid black;
 }
 
-.servicios_detalle div {
+.servicio {
     margin: 15px;
+    border: 5px solid white;
 }
 
-.servicios_detalle h4 {
+.servicio h4 {
     padding: 15px;
     background-color: #00ffff;
     color: black;
@@ -288,16 +268,19 @@ body section h2 {
     border: 5px solid #002331;
 }
 
-.servicios_detalle div p {
+.servicio p {
     background-color: #002331;
     color: white;
     font-size: 25px;
     text-align: center justify;
     padding: 10px;
 }
-
-.servicio {
-    border: 5px solid white;
+.servicio a {
+    padding: 10px 15px 25px 15px;
+    background-color: #00ffff;
+    color: black;
+    font-size: 40px;
+    border: 5px solid #002331
 }
 
 .servicio button {
@@ -310,11 +293,16 @@ body section h2 {
 }
 
 /*-----------------------------Tienda---------------------------*/
+
+.banner_tienda img {
+    height: auto;
+    width: 100%;
+}
 .tienda-productos {
     background-color: #0f384e;
 }
 
-.tienda-productos div {
+.titulo_productos {
     background-color: #06121e;
     color: white;
     padding: 10px;
@@ -335,23 +323,21 @@ body section h2 {
     padding: 15px;
 }
 
-.tienda-productos article img {
-    max-width: 230px;
-    height: 250px;
-    margin-top: 5px;
-    border: 3px solid black !important;
-}
-
-.card-body {
-    font-size: 18px;
-}
-
 .card {
     align-items: center !important;
     width: 250px;
     height: 330px;
     border: 3px solid black !important;
     margin-top: 10px;
+}
+.tienda-productos article img {
+    max-width: 230px;
+    height: 250px;
+    margin-top: 5px;
+    border: 3px solid black !important;
+}
+.card-body {
+    font-size: 18px;
 }
 
 
@@ -427,19 +413,13 @@ Footer hr {
 footer ul li {
     font-size: 5vw !important;
     margin: 2vw 8vw !important;
-    color: white
-}
-
-.redessociales i:hover {
-    width: 32%;
-}
-
-footer ul li {
+    color: white;
     display: inline-block;
     margin: 20px;
     border: 1px;
     padding: 10px;
 }
+
 
 /*-----------------------------Responsiv---------------------------!*/
 
@@ -461,6 +441,7 @@ footer ul li {
     .servicios_desgloce div img {
         width: 350px;
         height: 350px;
+        margin:2px;
     }
 }
 
@@ -552,9 +533,10 @@ footer ul li {
     }
 
     .servicios_desgloce div img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border: 5px solid white;
+        margin: 2px;
     }
 
     .footer .img {
@@ -586,8 +568,9 @@ footer ul li {
         padding: 20px;
     }
     .servicios_desgloce div img {
-        width: 231px;
-        height: 231px;
+        width: 250px;
+        height: 250px;
+        margin: 5px;
     }
     .card {
         align-items: center !important;

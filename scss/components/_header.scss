@@ -1,0 +1,37 @@
+/*-----------------------------HEADER---------------------------*/
+header{
+    background-color: #140f07;
+    .logobox{
+        display: flex;
+        justify-content: center;
+        a{
+            img{
+                width: 150px;
+            }
+        }
+    }
+    nav{
+        ul{
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            li{
+                display: inline-block;
+                font-size: 25px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                    padding: 14px 16px;
+                    &:hover{
+                        background-color: #1d1c1c;
+                    }
+                }
+            }
+        }
+    }
+}
