@@ -7,7 +7,7 @@ main {
         padding: 100px;
         width: 100%;
         text-align: center;
-        color: white;
+        color: $color-cuatro;
         background-image: url(../img/logo.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -15,12 +15,12 @@ main {
         background-attachment: fixed;
 
         h1 {
-            background-color: #140f07a4;
+            background-color: $color-uno;
             margin-top: 33px;
             font-size: 80px;
             font-style: oblique;
             font-variant: inherit;
-            border: 10px solid white;
+            border: 10px solid $color-cuatro;
             display: inline-block;
             padding: 15px;
             margin-bottom: 50px;
@@ -35,25 +35,25 @@ main {
 
         a {
             font-size: 25px;
-            background-color: white;
+            background-color: $color-cuatro;
             text-decoration: none;
-            color: black;
+            color: $color-cinco;
             padding: 20px;
             margin: 10px;
-            border: solid black;
+            border: solid $color-cinco;
             border-radius: 10%;
             transition-duration: 0.5s;
                 &:hover {
-                    background-color: #140f07;
-                    color: rgb(255, 255, 255);
-                    font-size: 250%;
+                    background-color: $color-uno;
+                    color: $color-cuatro;
+                    font-size: 165%;
                 }
         }
     }
 
     h3 {
         background-color: #bfcbf8(255, 0, 0, 0.363);
-        color: white;
+        color: $color-cuatro;
         font-size: 4vw;
         text-align: center;
         padding: 15px;
