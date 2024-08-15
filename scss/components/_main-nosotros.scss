@@ -1,6 +1,7 @@
 /**_____________________________________ Nosotros_____________________________________**/
 main {
     .nosotros_mapa {
+       // @include flex (flex, wrap, ) //No me deja incluir el mixin me da "message"#: "no mixin named mixin
         background-color: #1db5ba;
         display: wrap;
         flex-wrap: wrap;
@@ -9,7 +10,7 @@ main {
             margin-left: 20px;
             text-align: start;
 
-            h4 {
+            h1 {
                 padding: 50px 0px 0px 0px;
                 color: $color-cuatro;
                 text-align: center;
@@ -42,6 +43,7 @@ main {
         box-sizing: border-box;
 
         ul {
+            //@include flex(flex, wrap, space-around) //No me deja incluir el mixin me da "message"#: "no mixin named mixin
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -90,3 +92,12 @@ main {
     }
 
 }
+ /**____ MIXIN en nosotros____**/
+ @mixin flex($display: flex, $flex-wrap: wrap, $justify-content: center) {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+//intente aplicar mixin en la linea 4 y la lina 46 pero me da un error de "message"#: "no mixin named mixin

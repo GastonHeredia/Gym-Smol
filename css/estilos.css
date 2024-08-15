@@ -78,7 +78,7 @@ main {
         background-color: #140f07;
         color: white;
         font-size: 165%; }
-  main h3 {
+  main h2 {
     background-color: #bfcbf8 255, 0, 0, 0.363;
     color: white;
     font-size: 4vw;
@@ -90,7 +90,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-color: #8389bb; }
-    main .index_profesionales div h4 {
+    main .index_profesionales div h3 {
       color: #8389bb;
       text-align: center;
       font-style: oblique;
@@ -124,7 +124,7 @@ main .nosotros_mapa {
   main .nosotros_mapa div {
     margin-left: 20px;
     text-align: start; }
-    main .nosotros_mapa div h4 {
+    main .nosotros_mapa div h1 {
       padding: 50px 0px 0px 0px;
       color: white;
       text-align: center;
@@ -182,12 +182,13 @@ main .publicidad {
     height: 50%;
     width: 97%; }
 
+/**____ MIXIN en nosotros____**/
 /**_____________________________________ Servicios_____________________________________**/
 main .banner_servicios img {
   height: auto;
   width: 100%; }
 
-main .titulo_servicios h2 {
+main .titulo_servicios h1 {
   color: white;
   margin: 0px;
   border: 5px solid black;
@@ -218,7 +219,7 @@ main .servicios_detalle {
   main .servicios_detalle .servicio {
     margin: 15px;
     text-align: center; }
-    main .servicios_detalle .servicio h4 {
+    main .servicios_detalle .servicio h2 {
       padding: 15px;
       background-color: #00ffff;
       color: black;
@@ -266,7 +267,7 @@ main .tienda-productos {
     background-color: #06121e;
     color: white;
     padding: 10px; }
-    main .tienda-productos .titulo_productos h4 {
+    main .tienda-productos .titulo_productos h2 {
       background-color: #2bc9c8;
       color: white;
       font-size: 50px;
@@ -280,8 +281,9 @@ main .tienda-productos {
       align-items: center !important;
       width: 250px;
       height: 330px;
-      margin-top: 10px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      background-color: #00475c;
+      color: white; }
       main .tienda-productos article .card:hover {
         transform: scale(1.1); }
       main .tienda-productos article .card img {
@@ -289,12 +291,14 @@ main .tienda-productos {
         height: 250px;
         margin-top: 5px; }
       main .tienda-productos article .card .card-body {
-        font-size: 18px; }
+        font-size: 18px;
+        padding: 0px; }
 
 /**____ EXTEND en la Tienda ____**/
-main .tienda-productos .titulo_productos h4, main .tienda-productos article .card, main .tienda-productos article .card img {
+main .tienda-productos .titulo_productos h2, main .tienda-productos article .card, main .tienda-productos article .card img {
   border: 3px solid black !important; }
 
+/**____ MIXIN en la Tienda ____**/
 /**_____________________________________ Contacto _____________________________________**/
 main .contacto {
   background-color: #2bc6c8;
@@ -346,7 +350,7 @@ footer {
     justify-content: space-evenly;
     padding: 25px; }
     footer .redessociales ul li {
-      font-size: 5vw !important;
+      font-size: 3vw !important;
       margin: 2vw 8vw !important;
       color: white;
       display: inline-block;
@@ -375,7 +379,9 @@ footer {
   main .servicios_desgloce div img {
     width: 350px;
     height: 350px;
-    margin: 2px; } }
+    margin: 2px; }
+  .footer section ul li {
+    font-size: 4vw !important; } }
 
 /*-------------------------1050px-------------------------------!*/
 @media screen and (max-width: 1050px) {
@@ -439,6 +445,8 @@ footer {
     height: 300px;
     border: 5px solid white;
     margin: 2px; }
+  .footer section ul li {
+    font-size: 5vw !important; }
   .footer div a img {
     width: 15vh; }
   .footer section p {
@@ -465,6 +473,8 @@ footer {
     height: 30%;
     width: 100%;
     padding: 20px; }
+  main .titulo_servicios h2 {
+    font-size: 40px; }
   main .servicios_desgloce div img {
     width: 250px;
     height: 250px;
@@ -487,8 +497,8 @@ footer {
   main .nosotros_cuerpo ul li {
     margin: 10px 30px; }
   main .servicios_detalle div h4 {
-    font-size: 30px; }
-  main .servicios_detalle div p {
+    font-size: 20px; }
+  main .servicios_detalle .servicio p {
     font-size: 20px; }
   main .servicios_detalle .servicio a button {
     width: 140px;
@@ -505,7 +515,12 @@ footer {
   main section .contacto_formulario {
     grid-column: 1/5 !important;
     grid-row: 1/3 !important;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  main .titulo_servicios h2 {
+    font-size: 35px; }
+  main .servicios_desgloce div img {
+    width: 170px;
+    height: 170px; } }
 
 /*-------------------------510px-------------------------------!*/
 @media screen and (max-width: 510px) {
@@ -538,10 +553,11 @@ footer {
     font-size: 12px; }
   main .titulo_servicios h2 {
     font-size: 25px; }
-  main .servicios_detalle div h4 {
-    font-size: 30px; }
-  main .servicios_detalle div p {
+  main .servicios_detalle .servicio h4 {
+    font-size: 23px; }
+  main .servicios_detalle .servicio p {
     font-size: 15px; }
   main .servicios_desgloce div img {
-    width: 160px;
-    height: 160px; } }
+    width: 120px;
+    height: 120px;
+    margin: 13px; } }

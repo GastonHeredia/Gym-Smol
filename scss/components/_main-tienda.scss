@@ -16,7 +16,8 @@
         color: $color-cuatro;
         padding: 10px;
   
-        h4 {
+        h2 {
+          //@include colores($color-seis,$color-cuatro ) // Me da error en el nombre
           background-color: $color-seis;
           color: $color-cuatro;
           font-size: 50px;
@@ -35,8 +36,9 @@
           align-items: center !important;
           width: 250px;
           height: 330px;
-          margin-top: 10px;
           transition: 0.5s;
+          background-color: $color-dos;
+          color: $color-cuatro;
           &:hover {
             transform: scale(1.1);
           }
@@ -51,6 +53,8 @@
   
           .card-body {
             font-size: 18px;
+            padding: 0px;
+          
           }
         }
       }
@@ -62,3 +66,8 @@
     border: 3px solid $color-cinco !important;
   }
   
+  /**____ MIXIN en la Tienda ____**/
+  @mixin colores($background, $color){
+    background-color: $background;
+    color: $color;
+  }
